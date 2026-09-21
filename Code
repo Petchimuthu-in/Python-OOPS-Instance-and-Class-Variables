@@ -1,0 +1,23 @@
+class BankAccount:
+
+    bank_name = "SBI"
+
+    def __init__(self, name, account_type, balance):
+        self.name = name
+        self.account_type = account_type
+        self.balance = balance
+
+    def display(self):
+        print("Bank:", BankAccount.bank_name)
+        print("Name:", self.name)
+        print("Account Type:", self.account_type)
+        print("Balance:", self.balance)
+        print()
+
+account1 = BankAccount("Arun", "Savings", 25000)
+account2 = BankAccount("Priya", "Current", 50000)
+account3 = BankAccount("Karthik", "Savings", 35000)
+
+account1.display()
+account2.display()
+account3.display()
